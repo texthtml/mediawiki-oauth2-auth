@@ -1,0 +1,14 @@
+{
+    "name": "texthtml/mediawiki-oauth2-auth",
+    "type": "mediawiki-extension",
+    "autoload": {
+        "psr-4": {
+            "TH\\MediaWiki\\OAuth2Auth\\": "src/"
+        }
+    },
+    "require": {
+        "fl/oauth2-prelinker": "^1.0",
+        "league/oauth2-client": "^1.4",
+        "ramsey/uuid": "^3.0"
+    }
+}

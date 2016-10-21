@@ -1,0 +1,31 @@
+{
+    "name": "texthtml/MediaWikiOAuth2Auth",
+    "version": "1.0.0",
+    "author": [
+        "Mathieu Rochette"
+    ],
+    "requires": {
+        "MediaWiki": ">= 1.25.0"
+    },
+    "url": "https://github.com/texthtml/mediawiki-oauth2-auth",
+    "descriptionmsg": "OAuth2 extension for MediaWiki to integrate OAuth2 as a login strategy.",
+    "license-name": "lGPLv3",
+    "type": "auth",
+    "Hooks": {
+        "UserLoginForm": [
+            "\\TH\\MediaWiki\\OAuth2Auth\\Hooks::onUserLoginForm"
+        ],
+        "LoadExtensionSchemaUpdates": [
+            "\\TH\\MediaWiki\\OAuth2Auth\\Hooks::onLoadExtensionSchemaUpdates"
+        ]
+    },
+    "SpecialPages": {
+        "MediawikiOauth2Auth": "\\TH\\MediaWiki\\OAuth2Auth\\SpecialPage"
+    },
+    "MessagesDirs": {
+        "MediawikiOauth2Auth": [
+            "resources/i18n"
+        ]
+    },
+    "manifest_version": 1
+}
