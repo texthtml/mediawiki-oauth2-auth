@@ -1,3 +1,4 @@
 {
     "mediawiki-oauth2-auth_login": "The text on the login link/button"
+    "mediawiki-oauth2-auth_login-anonymous-service": "The text on the login link/button when the service name is undefined"
 }
