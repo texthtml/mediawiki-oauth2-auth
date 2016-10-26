@@ -8,7 +8,7 @@
         "MediaWiki": ">= 1.25.0"
     },
     "url": "https://github.com/texthtml/mediawiki-oauth2-auth",
-    "descriptionmsg": "OAuth2 extension for MediaWiki to integrate OAuth2 as a login strategy.",
+    "descriptionmsg": "Authenticate Mediawiki from external OAuth2 server",
     "license-name": "lGPLv3",
     "type": "auth",
     "Hooks": {

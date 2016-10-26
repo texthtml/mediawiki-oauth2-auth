@@ -1,6 +1,14 @@
 {
     "name": "texthtml/mediawiki-oauth2-auth",
+    "description": "Authenticate Mediawiki from external OAuth2 server",
     "type": "mediawiki-extension",
+    "keywords": ["mediawiki", "oauth2", "auth", "login", "extension"],
+    "authors": [{
+        "name": "Mathieu Rochette",
+        "email": "mathieu@texthtml.net",
+        "homepage": "https://mathieu.rochette.cc/",
+        "role": "Developer"
+    }],
     "autoload": {
         "psr-4": {
             "TH\\MediaWiki\\OAuth2Auth\\": "src/"
