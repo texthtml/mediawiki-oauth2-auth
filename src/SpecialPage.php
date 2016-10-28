@@ -52,17 +52,19 @@ class SpecialPage extends MediaWikiSpecialPage
         unset($session["$stateSessionKeyPrefix.id"]);
 
         // Try to get an access token using the authorization code grant.
-        $accessToken = $provider->getAccessToken("authorization_code", ["code" => $_GET["code"]]);
+        $accessToken = $provider->getAccessToken("authorization_code", ["code" => $_GET["code"], "debug" => "true"]);
 
         $userInfo = $this->userInfo($provider->getResourceOwner($accessToken));
 
         $user = $this->userHandling($userInfo);
         $user->setCookies();
 
+        $title = null;
         if(isset($session["$stateSessionKeyPrefix.returnto"])) {
             $title = \Title::newFromText($session["$stateSessionKeyPrefix.returnto"]);
             unset($session["$stateSessionKeyPrefix.returnto"]);
-        } else {
+        }
+        if ($title === null) {
             $title = \Title::newMainPage();
         }
 
