@@ -15,7 +15,6 @@
         }
     },
     "require": {
-        "fl/oauth2-prelinker": "^1.0",
         "league/oauth2-client": "^1.4",
         "ramsey/uuid": "^3.0"
     }
