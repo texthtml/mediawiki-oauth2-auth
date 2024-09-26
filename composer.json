@@ -15,7 +15,7 @@
         }
     },
     "require": {
-        "league/oauth2-client": "^1.4",
+        "league/oauth2-client": "^2.0",
         "ramsey/uuid": "^3.0"
     }
 }
